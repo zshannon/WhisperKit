@@ -1317,6 +1317,42 @@ struct WhisperTokenizerWrapper: WhisperTokenizer {
 }
 
 extension WhisperTokenizerWrapper: Tokenizer {
+    func decode(tokens: [Int], skipSpecialTokens: Bool) -> String {
+        tokenizer.decode(tokens: tokens)
+    }
+
+    func encode(text: String, addSpecialTokens: Bool) -> [Int] {
+        tokenizer.encode(text: text)
+    }
+
+    func applyChatTemplate(messages: [Tokenizers.Message]) throws -> [Int] {
+        fatalError("not implemented")
+    }
+
+    func applyChatTemplate(messages: [Tokenizers.Message], tools: [Tokenizers.ToolSpec]?) throws -> [Int] {
+        fatalError("not implemented")
+    }
+
+    func applyChatTemplate(messages: [Tokenizers.Message], tools: [Tokenizers.ToolSpec]?, additionalContext: [String : Any]?) throws -> [Int] {
+        fatalError("not implemented")
+    }
+
+    func applyChatTemplate(messages: [Tokenizers.Message], chatTemplate: Tokenizers.ChatTemplateArgument) throws -> [Int] {
+        fatalError("not implemented")
+    }
+
+    func applyChatTemplate(messages: [Tokenizers.Message], chatTemplate: String) throws -> [Int] {
+        fatalError("not implemented")
+    }
+
+    func applyChatTemplate(messages: [Tokenizers.Message], chatTemplate: Tokenizers.ChatTemplateArgument?, addGenerationPrompt: Bool, truncation: Bool, maxLength: Int?, tools: [Tokenizers.ToolSpec]?) throws -> [Int] {
+        fatalError("not implemented")
+    }
+
+    func applyChatTemplate(messages: [Tokenizers.Message], chatTemplate: Tokenizers.ChatTemplateArgument?, addGenerationPrompt: Bool, truncation: Bool, maxLength: Int?, tools: [Tokenizers.ToolSpec]?, additionalContext: [String : Any]?) throws -> [Int] {
+        fatalError("not implemented")
+    }
+
     func tokenize(text: String) -> [String] {
         tokenizer.tokenize(text: text)
     }
