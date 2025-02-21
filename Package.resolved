@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser.git",
       "state" : {
-        "revision" : "0fbc8848e389af3bb55c182bc19ca9d5dc2f255b",
-        "version" : "1.4.0"
+        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
+        "version" : "1.5.0"
       }
     },
     {
@@ -30,10 +30,10 @@
     {
       "identity" : "swift-transformers",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/huggingface/swift-transformers.git",
+      "location" : "https://github.com/matiasvillaverde/swift-transformers.git",
       "state" : {
-        "revision" : "55710ddfb1ae804b4b7ce973be75cf2e41272185",
-        "version" : "0.1.17"
+        "branch" : "main",
+        "revision" : "b227ce63b0b67c023b5179a1496dfa5e649a11e1"
       }
     }
   ],
